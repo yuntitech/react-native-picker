@@ -226,7 +226,7 @@ class PickerView extends BaseComponent {
     }
 
 
-    componentWillMount(evt, gestureState) {
+    UNSAFE_componentWillMount(evt, gestureState) {
         this._panResponder = PanResponder.create({
             onStartShouldSetPanResponder: this.onStartShouldSetPanResponder,
             onMoveShouldSetPanResponder: this.onMoveShouldSetPanResponder,
